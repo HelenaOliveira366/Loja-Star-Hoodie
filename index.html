@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Hoodie</title>
+
+    <!--Palavras chaves do site-->
+    <meta name="keywords" content="hoodie, moletom, casaco, camisas, capuz, star, estrela, star hoodie, produtos, feminio, masculino, infantil, edição limitada, popular, lançamento">
+    <!--Descrição do site-->
+    <meta name="description" content="Ecommerce de venda de casaco moletons de diversos modelos e cores para público masculino, feminino e infantil">
+
+    <!--FAVICON IMPORT-->
+    <link rel="shortcut icon" href="./Assets/favicon.svg" type="image/svg">
+
+    <!--BS IMPORT-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!--BS ICONS IMPORT-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--FONT Dancing Script AND Work Sans IMPORT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--CCS AND JS PROJECT IMPORT-->
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="./script/scripts.js" defer></script>
+</head>
+<body>
+    <!--NAVBAR SUPERIOR-->
+    <!--Navbar é difinida por 'navbar' e 'navbar-expanded-lg' expande a barra em telas grandes-->
+    <nav class="navbar navbar-expanded-lg p-3" id="navbar">
+        <div class="container">
+            <!--Logo - Usa a classe 'navbar-brand', ele não é levado em consideração na estrutura do BS, por isso pode-se criar uma div vazia para espaçar os elementos da barra-->
+            <h1 class="navbar-brand mb-3">Star Hoodie</h1>
+            <div id="navbar-items">
+                <!--Mecanismo de busca do site-->
+                <form class="d-flex" id="search-form">
+                    <label for="search" class="form-label"></label>
+                    <input type="text" class="form-control" id="search" name="search" aria-label="Search" placeholder="Buscar mais moletons incríveis...">
+                    <button class="btn" type="submit">Buscar</button>
+                </form>
+                <!--Dados da conta do usuário-->
+                <!--Para listas a classe 'nav-item' é obrigatória para estruturação para os li e para a tag a é a classe 'nav-link'-->
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-suit-heart"></i>
+                        </a>
+                        <span class="qty-info">5</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-cart-check"></i>
+                        </a>
+                        <span class="qty-info">2</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--NAVBAR INFERIOR-->
+    <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
+        <div class="container">
+            <!--Botão de controle da lista-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toogle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <!--Itens da lista-->
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container" id="banners-container">
+        <!--CAROUSEL-->
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <!--Imagens dos slides-->
+            <div class="carousel-inner">
+                <!--Imagem 1-->
+                <div class="carousel-item active">
+                    <img src="./Assets/carousel-img-1.jpg" 
+                    alt="Moleton masculino marrom, amarelo e azul" 
+                    class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h2 class="text-center">Variedade</h2>
+                        <p>Modelos pensados em você e para todos os gostos</p>
+                    </div>
+                </div>
+                <!--Imagem 2-->
+                <div class="carousel-item">
+                    <img src="./Assets/carousel-img-2.jpg" 
+                    alt="Moleton feminino rosa" 
+                    class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h2 class="text-center">Preço</h2>
+                        <p>Os melhores moletons pelos melhores preços</p>
+                    </div>
+                </div>
+                <!--Imagem 3-->
+                <div class="carousel-item">
+                    <img src="./Assets/carousel-img-3.jpg" 
+                    alt="Moleton masculino branco azul" 
+                    class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h2 class="text-center">Qualidade</h2>
+                        <p>Tecidos escolhidos a dedo para vestir você</p>
+                    </div>
+                </div>
+            </div>
+            <!--Botão de voltar slide-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <!--Botão de avançar slide-->
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--BANNERS INFERIORES-->
+        <div class="container" id="mini-banners">
+            <div class="row justify-content-around">
+                <!--Banner 1-->
+                <div class="col-12 my-4" id="mini-banner-1">
+                    <h2>Feminino</h2>
+                    <img src="./Assets/moleton-feminino-rosa-bolso-verde.png" 
+                    alt="Moleton Feminino" 
+                    class="img-fluid">
+                    <a href="#" target="_blank" class="btn">Compre agora</a>
+                </div>
+                <!--Banner 2-->
+                <div class="col-12 " id="mini-banner-2">
+                    <h2>Masculino</h2>
+                    <img src="./Assets/moleton-masculino-amarelo.png" 
+                    alt="Moleton Masculino" 
+                    class="img-fluid">
+                    <a href="#" target="_blank" class="btn">Compre agora</a>
+                </div>
+                <!--Banner 3-->
+                <div class="col-12 my-4" id="mini-banner-3">
+                    <h2>Infantil</h2>
+                    <img src="./Assets/moleton-masculino-marron-amarelo-azul.png" 
+                    alt="Moleton Infantil" 
+                    class="img-fluid">
+                    <a href="#" target="_blank" class="btn">Compre agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARDS-->
+    <div class="container text-center" id="products">
+        <h2 class="mb-4 text-center">Conheça nossos produtos incríveis</h2>
+        <div class="row align-items-end">
+            <!--Produto 1-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-branco-azul-onda.png" 
+                    alt="Moletom Masculino azul onda" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-launch">Lançamento</p>
+                        <h3 class="card-title">Moletom Masculino azul onda</h3>
+                        <p class="card-text">R$ 406,64</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 2-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-feminino-rosa.png" 
+                    alt="Moleton feminino rosa manga verde" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-launch">Lançamento</p>
+                        <h3 class="card-title">Moleton feminino rosa manga verde</h3>
+                        <p class="card-text">R$ 303,94</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 3-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-manga-verde.png" 
+                    alt="Moletom masculino cores sortidas" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-limited-edition">Edição limitada</p>
+                        <h3 class="card-title">Moletom masculino cores sortidas</h3>
+                        <p class="card-text">R$ 320,87</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 4-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-feminino-azul-rosa.png" 
+                    alt="Moletom feminino rosa e azul" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-limited-edition">Edição limitada</p>
+                        <h3 class="card-title">Moletom feminino rosa e azul</h3>
+                        <p class="card-text">R$ 310,39</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 5-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-marron-escuro.png" 
+                    alt="Moletom masculino marrom" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-pop">Popular</p>
+                        <h3 class="card-title">Moletom masculino marrom</h3>
+                        <p class="card-text">R$210,55</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 6-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-verde.png" 
+                    alt="" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-pop">Popular</p>
+                        <h3 class="card-title">Moletom masculino verde escuro</h3>
+                        <p class="card-text">R$270,34</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 7-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-amarelo.png" 
+                    alt="Moletom masculino amarelo escuro" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-pop">Popular</p>
+                        <h3 class="card-title">Moletom masculino amarelo escuro</h3>
+                        <p class="card-text">R$ 340,70</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+            <!--Produto 8-->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="./Assets/moleton-masculino-marron-amarelo-azul.png" 
+                    alt="Moletom infantil marrom de cores sortidas" 
+                    class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="badge bg-pop">Popular</p>
+                        <h3 class="card-title">Moletom infantil de cores sortidas</h3>
+                        <p class="card-text">R$ 140,49</p>
+                        <a href="#" class="btn">Comprar agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BANNER DE DESTAQUE-->
+    <div class="container-fluid mt-5 mb-5" id="highlight-banner">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8 text-center">
+                <p class="offer">Desconto de até 20%</p>
+                <h2>Moletom luxuoso</h2>
+                <p>Presenteie uma pessoa especial</p>
+                <a href="#" class="btn">Comprar agora</a>
+            </div>
+            <div class="col-12 col-md-4 align-items-center">
+                <img src="./Assets/moleton-feminino-rosa-bolso-verde.png" alt="Moletom luxuoso" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="container-fluid" id="footer-links-container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Páginas</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" target="_blank">Home</a></li>
+                        <li class="mb-2"><a href="#" target="_blank">Categorias</a></li>
+                        <li class="mb-2"><a href="" target="_blank">Produtos</a></li>
+                        <li class="mb-2"><a href="#" target="_blank">Promoção</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer-center">
+                    <h2 class="brand">Star Hoodie</h2>
+                    <p>Alguma dúvida? Ligue para<br><i class="bi bi-telephone"></i> <a href="tel:5593984253614" target="_blank">55 93 98425-3614</a></p>
+                </div>
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Informações</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" target="_blank">Política de privacidade</a></li>
+                        <li class="mb-2"><a href="#" target="_blank">Política de entregas</a></li>
+                        <li class="mb-2"><a href="#" target="_blank">Rastreie o seu pedido</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Formulário newsletter-->
+        <div class="container-fluid" id="newsletter-container">
+            <div class="col-12">
+                <div class="row text-center">
+                    <p>Se inscreva em nossa newsletter e fique por dentro dos produtos feitos para você!</p>
+                    <form class="d-flex justify-content-center align-items-center" id="news-form">
+                        <i class="bi bi-envelope-heart"></i>
+                        <label for="news-form-email" class="form-label"></label>
+                        <input type="email" class="form-control" id="news-form-email" name="news-form-email" placeholder="Digite seu email">
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12" id="social-container">
+                <ul class="list-unstyled d-flex justify-content-center mt-5 mb-4">
+                    <li class=""><a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                    <li class="mb-2"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li class="mb-2"><a href="#" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                    <li class="mb-2"><a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </div>
+            <div class="container" id="copy-container">
+                <p>@2024 Todos os direitos reservados</p>
+                <p>Site oficial da Star Hoodie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
