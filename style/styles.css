@@ -477,7 +477,7 @@ img:hover{
 #newsletter-container #news-form input{
     box-shadow: none;
     color: var(--light-green-color);
-    background-color: var(--white-color);
+    background-color: #F9F9F9;
     border: 1px solid var(--light-green-color);
     margin-right: 0.5rem;
 }
