@@ -16,6 +16,8 @@
     <li>Bootstrap Icons</li>
 </ul>
 
+<a href="https://helenaoliveira366.github.io/Loja-Star-Hoodie/" target="_blank" rel="noopener noreferrer">Você pode acessar o projeto aqui</a>
+
 <h3>Abaixo tem algumas imagens do projeto</h3>
 <img src="./Assets/Img-projeto-1.PNG" alt="Carousel">
 <img src="./Assets/Img-projeto-2.PNG" alt="Vitrine">
