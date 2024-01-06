@@ -227,6 +227,71 @@ img:hover{
     }
 }
 
+/****************OFFCANVAS****************/
+.offcanvas{
+    background-color: var(--black-color);
+    border: 1px solid #000000;
+    border-right: none;
+}
+
+.offcanvas h2{
+    color: var(--red-color);
+    font-size: 2rem;
+}
+
+.offcanvas .item-offcanvas{
+    display: flex;
+}
+
+.offcanvas .item-offcanvas img{
+    width: 70px;
+}
+
+.offcanvas .item-offcanvas img:hover{
+    scale: 1.0;
+}
+
+.offcanvas .item-offcanvas h3{
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.offcanvas .item-offcanvas p{
+    color: var(--light-green-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.offcanvas .btn-offcanvas{
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+    font-size: 0.9rem;
+    border: none;
+}
+
+.offcanvas .btn-offcanvas:active{
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+}
+
+.offcanvas .info-item-cart{
+    margin-left: 0.7rem;
+}
+
+.offcanvas .buy-all-itens{
+    width: 80%;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
 /****************BANNERS INFERIORES****************/
 #mini-banners .col-12{
     min-width: 360px;
