@@ -11,6 +11,7 @@
     <li>Grid</li>
     <li>Flexbox</li>
     <li>Container</li>
+    <li>Componentes: Offcanvas</li>
     <li>Media queries</li>
     <li>Imagens fluidas</li>
     <li>Bootstrap Icons</li>
