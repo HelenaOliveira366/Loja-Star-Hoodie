@@ -13,6 +13,11 @@
     --light-yellow: #FDEF96;
 }
 
+::selection{
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+
 body{
     background-color: var(--black-color);
     color: var(--white-color);
