@@ -46,18 +46,21 @@
                 <!--Dados da conta do usuário-->
                 <!--Para listas a classe 'nav-item' é obrigatória para estruturação para os li e para a tag a é a classe 'nav-link'-->
                 <ul class="navbar-nav mb-lg-0">
+                    <!--Favoritos - Este item tem offcanvas scrolling-->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#offcanvas-favorites" class="nav-link" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-favorites" aria-controls="offcanvas-favorites">
                             <i class="bi bi-suit-heart"></i>
-                        </a>
-                        <span class="qty-info">5</span>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="bi bi-cart-check"></i>
                         </a>
                         <span class="qty-info">2</span>
                     </li>
+                    <!--Carrinho - Este item tem offcanvas scrolling-->
+                    <li class="nav-item">
+                        <a href="#offcanvas-shopping-cart" class="nav-link" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shopping-cart" aria-controls="offcanvas-shopping-cart">
+                            <i class="bi bi-cart-check"></i>
+                        </a>
+                        <span class="qty-info">3</span>
+                    </li>
+                    <!--Perfil-->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="bi bi-person-circle"></i>
@@ -67,6 +70,72 @@
             </div>
         </div>
     </nav>
+    <!--OFFCANVAS DOS FAVORITOS-->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvas-favorites" aria-labelledby="offcanvasScrolling-favorites">
+        <!--Cabeçalho e botão fechar-->
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasScrolling-favorites">Favoritos</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!--Itens-->
+        <div class="offcanvas-body">
+            <div class="item-offcanvas mb-4" id="item-favorites-1">
+                <img src="./Assets/moleton-masculino-marron-amarelo-azul.png" alt="Moletom infantil marrom de cores sortidas" class="img-fluid">
+                <div class="info-item-cart">
+                    <h3>Moletom infantil cores sortidas</h3>
+                    <p class="price-item-cart">R$ 140,49</p>
+                    <a href="#" class="btn btn-offcanvas">Comprar agora</a>
+                </div>
+            </div>
+            <div class="item-offcanvas mb-4" id="item-favorites-2">
+                <img src="./Assets/moleton-masculino-verde.png" alt="Moletom masculino verde escuro" class="img-fluid">
+                <div class="info-item-cart">
+                    <h3>Moletom masculino verde</h3>
+                    <p class="price-item-cart">R$270,34</p>
+                    <a href="#" class="btn btn-offcanvas">Comprar agora</a>
+                </div>
+            </div>
+            <!--Botão comprar todos os itens-->
+            <a href="#" target="_blank" class="btn btn-offcanvas buy-all-itens" rel="noopener noreferrer">Comprar todos os itens</a>
+        </div>
+    </div>
+    <!--OFFCANVAS DO CARRINHO-->
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvas-shopping-cart" aria-labelledby="offcanvasScrolling-shopping-cart">
+        <!--Cabeçalho e botão fechar-->
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasScrolling-shopping-cart">Carrinho de compras</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!--Itens-->
+        <div class="offcanvas-body">
+            <div class="item-offcanvas mb-4" id="item-cart-1">
+                <img src="./Assets/moleton-feminino-azul-rosa.png" alt="Moletom feminino rosa e azul" class="img-fluid">
+                <div class="info-item-cart">
+                    <h3>Moletom feminino rosa e azul</h3>
+                    <p class="price-item-cart">R$ 310,39</p>
+                    <a href="#" class="btn btn-offcanvas">Comprar agora</a>
+                </div>
+            </div>
+            <div class="item-offcanvas mb-4" id="item-cart-2">
+                <img src="./Assets/moleton-masculino-amarelo.png" alt="Moletom masculino amarelo escuro" class="img-fluid">
+                <div class="info-item-cart">
+                    <h3>Moletom masculino amarelo</h3>
+                    <p class="price-item-cart">R$ 340,70</p>
+                    <a href="#" class="btn btn-offcanvas">Comprar agora</a>
+                </div>
+            </div>
+            <div class="item-offcanvas mb-4" id="item-cart-3">
+                <img src="./Assets/moleton-masculino-branco-azul-onda.png" alt="Moletom Masculino branco e azul" class="img-fluid">
+                <div class="info-item-cart">
+                    <h3>Moletom Masculino branco e azul</h3>
+                    <p class="price-item-cart">R$ 406,64</p>
+                    <a href="#" class="btn btn-offcanvas">Comprar agora</a>
+                </div>
+            </div>
+            <!--Botão comprar todos os itens-->
+            <a href="#" target="_blank" class="btn btn-offcanvas buy-all-itens" rel="noopener noreferrer">Comprar todos os itens</a>
+        </div>
+    </div>
     <!--NAVBAR INFERIOR-->
     <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
         <div class="container">
@@ -143,7 +212,7 @@
         <div class="container" id="mini-banners">
             <div class="row justify-content-around">
                 <!--Banner 1-->
-                <div class="col-12 my-4" id="mini-banner-1">
+                <div class="col-12 my-3" id="mini-banner-1">
                     <h2>Feminino</h2>
                     <img src="./Assets/moleton-feminino-rosa-bolso-verde.png" 
                     alt="Moleton Feminino" 
@@ -151,7 +220,7 @@
                     <a href="#" target="_blank" class="btn">Compre agora</a>
                 </div>
                 <!--Banner 2-->
-                <div class="col-12 my-4" id="mini-banner-2">
+                <div class="col-12 my-3" id="mini-banner-2">
                     <h2>Masculino</h2>
                     <img src="./Assets/moleton-masculino-amarelo.png" 
                     alt="Moleton Masculino" 
@@ -159,7 +228,7 @@
                     <a href="#" target="_blank" class="btn">Compre agora</a>
                 </div>
                 <!--Banner 3-->
-                <div class="col-12 my-4" id="mini-banner-3">
+                <div class="col-12 my-3" id="mini-banner-3">
                     <h2>Infantil</h2>
                     <img src="./Assets/moleton-masculino-marron-amarelo-azul.png" 
                     alt="Moleton Infantil" 
@@ -181,7 +250,7 @@
                     class="card-img-top img-fluid">
                     <div class="card-body">
                         <p class="badge bg-launch">Lançamento</p>
-                        <h3 class="card-title">Moletom Masculino azul onda</h3>
+                        <h3 class="card-title">Moletom Masculino branco e azul</h3>
                         <p class="card-text">R$ 406,64</p>
                         <a href="#" class="btn">Comprar agora</a>
                     </div>
@@ -279,7 +348,7 @@
                     class="card-img-top img-fluid">
                     <div class="card-body">
                         <p class="badge bg-pop">Popular</p>
-                        <h3 class="card-title">Moletom infantil de cores sortidas</h3>
+                        <h3 class="card-title">Moletom infantil cores sortidas</h3>
                         <p class="card-text">R$ 140,49</p>
                         <a href="#" class="btn">Comprar agora</a>
                     </div>
@@ -354,6 +423,6 @@
                 <p>Site oficial da Star Hoodie</p>
             </div>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
