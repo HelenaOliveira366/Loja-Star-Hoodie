@@ -3,9 +3,9 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
 
-    --black-color: #2C3333;
+    --black-color: #292929;
     --white-color: #FFFFFF;
-    --red-color: #FF1E00;
+    --red-color: #F40A09;
     --dark-green-color: #0E8388;
     --light-green-color: #64CCC5;
     --orange: #EB5353;
@@ -316,12 +316,17 @@ img:hover{
     }
 }
 
-#mini-banners .col-12 h2{
+#mini-banners h2{
+    font-size: 2.8rem;
+}
+
+#mini-banners p{
+    font-size: 1.2rem;
+}
+
+#mini-banners h3{
     font-size: 2.5rem;
-    line-height: 1rem;
-    max-width: 70px;
-    display: block;
-    z-index: 10;
+    font-family: 'Dancing Script', cursive;
 }
 
 #mini-banners .col-12 img{
@@ -365,6 +370,10 @@ img:hover{
 #products h2{
     font-size: 2.8rem;
     padding: 0 20px;
+}
+
+#products p{
+    font-size: 1.2rem;
 }
 
 @media(max-width: 767px){
@@ -568,7 +577,7 @@ img:hover{
 }
 
 #newsletter-container #social-container i:hover{
-    color: var(--dark-green-color);
+    color: var(--red-color);
 }
 
 #newsletter-container #copy-container p{
