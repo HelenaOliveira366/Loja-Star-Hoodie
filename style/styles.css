@@ -395,7 +395,7 @@ img:hover{
     margin: 0 auto;
 }
 
-.card .badge{
+#products .card .badge{
     font-size: 0.7rem;
     font-weight: 400;
 }
