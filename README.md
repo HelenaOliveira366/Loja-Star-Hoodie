@@ -1,4 +1,5 @@
 <h1>Loja Star Hoodie</h1>
+> Em processo
 <p>Construída com Bootstrap 5</p>
 <p>Site e loja virtual de moletons de alta qualidade e estilo, com design elegante e cores animadas fugindo do tédio e se deparando com roupas incríveis para todos os públicos</p>
 
