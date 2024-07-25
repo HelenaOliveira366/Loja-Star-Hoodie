@@ -49,6 +49,12 @@ img:hover{
     transition: 0.2s;
 }
 
+/*Imagens do slide continuam em sua escala padrão*/
+#slider img:hover{
+    scale: 1;
+    transition: 0;
+}
+
 /****************NAVBAR SUPERIOR****************/
 /*LOGO*/
 #navbar .navbar-brand,
